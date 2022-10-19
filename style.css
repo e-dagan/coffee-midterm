@@ -8,30 +8,35 @@
 }
 
 .topnav a {
-    color: #1d1d1d;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    max-height:50vh;  
-    font-family: 'Lexend', sans-serif;}
+  color: #1d1d1d;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  max-height: 50vh;
+  font-family: 'Lexend', sans-serif;
+}
 
 
-.topnav img{
-  max-height:50vh;  
+.topnav img {
+  max-height: 50vh;
 }
 
 .topnav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-a:link { text-decoration: none; }
+a:link {
+  text-decoration: none;
+}
 
 
-a:visited { text-decoration: none; }
+a:visited {
+  text-decoration: none;
+}
 
 
 /* Title */
-.center{
+.center {
   margin-top: 15px;
   color: black;
   text-align: center;
@@ -48,7 +53,7 @@ a:visited { text-decoration: none; }
 
 
 /* Items  flex the img1 and title1 children in a column */
-.flexbox-container{
+.flexbox-container {
   display: inline;
   /* border: 3px solid red;
   background-color: yellow; */
@@ -58,14 +63,14 @@ a:visited { text-decoration: none; }
 }
 
 
-.image-container1{
+.image-container1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-left: 10%;
   padding-right: 10%;
 
-  margin:  5vh;
+  margin: 5vh;
   /* height: auto;
   width: 50%; */
   max-width: 100%;
@@ -74,12 +79,12 @@ a:visited { text-decoration: none; }
 
 }
 
-.image-link a:hover{
+.image-link a:hover {
   /* border: 3px solid red; */
 
 }
 
-.image-item{
+.image-item {
   margin: 1vh;
   /* flex-wrap: wrap; */
   width: 400px;
@@ -88,12 +93,12 @@ a:visited { text-decoration: none; }
   background-color: red; */
 }
 
-.image-container1 img{
+.image-container1 img {
   width: 100%;
   height: 100%;
 }
 
-.caption-text{
+.caption-text {
   margin-top: 5px;
   font-size: large;
   text-decoration: none;
@@ -103,7 +108,7 @@ a:visited { text-decoration: none; }
 
 }
 
-.title-container1{
+.title-container1 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -119,29 +124,31 @@ a:visited { text-decoration: none; }
   padding-right: 20%;
   margin: auto;
 }
-menu-item{
+
+menu-item {
   font-family: 'Lexend', sans-serif;
 
-/* ----Level 2 Pages Styling ----*/
+  /* ----Level 2 Pages Styling ----*/
 
 }
 
-h1{
+h1 {
   font-family: 'Lexend', sans-serif;
 }
 
-#v60-title{
+#v60-title {
   font-family: 'Lexend', sans-serif;
   margin-left: 65px;
   /* border: 3px solid red; */
 }
 
-.content-container{
+.content-container {
   display: flex;
   padding: 10px;
   border: 3px solid red;
 }
-.large-img{
+
+.large-img {
   width: 400px;
   height: 400px;
   padding: 20px;
@@ -152,7 +159,7 @@ h1{
 
 }
 
-.info-text{
+.info-text {
   font-family: 'Lexend', sans-serif;
   border: 3px solid cornflowerblue;
   margin: 50px;
@@ -160,17 +167,19 @@ h1{
 
 }
 
-.child-info{
+.child-info {
   margin-left: 10px;
   font-weight: 100;
   font-family: 'Quicksand', sans-serif;
 
 }
 
-.image-item { transition: all .4s ease-in-out; }
+.image-item {
+  transition: all .4s ease-in-out;
+}
 
 
-.image-item:hover{
+.image-item:hover {
   transform: translateY(-7px);
   transition: .3s ease-in-out;
   /* transition: transform 250ms linear; */
@@ -180,40 +189,60 @@ h1{
 }
 
 
-/* Mobile IphoneXR */
-@media screen and (max-width: 414px){
-  .flexbox-container{
-    display: flex;
-    justify-content: center;
-    border: 3px solid blue;
-    background-color: purple;
 
-  }
+  /* tablet */
+  @media screen and (min-width: 720px) {
+    .flexbox-container{
+      display: inline;
 
-  .image-container1{
-    margin-bottom: 10px;
-    margin-right: 50px;
-    justify-content: space-between;
+    }
+    .image-container1 {
+      
+    
+    }
+
+    .image-item {
+      width: 300px;
+      height: 300px;
+    }
+
+
+    @media screen and (min-width: 415px) and (max-width: 719px) {
+      .flexbox-container{
+        display: inline;
   
+      }
+      .image-container1 {
+        width: 150px;
+        height: 150px;
+      
+      }
+  
+      .image-item {
+        width: 150px;
+        height: 150px;
+      }
+
+
+  /* Mobile IphoneXR */
+@media screen and (max-width: 414px) {
+ 
+  .image-container1 {
+    display: inline ;
+    width: 20%;
+    
+    height: auto;
+    
+
   }
 
-  .image-item{
-    width: 100%;
-    height: 100%;
-  }    
+  .image-item {
+    margin-left: 50px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+  }
 
-  .caption-text{
+  .caption-text {
     font-size: medium;
   }
-/* 
- @media screen and (max-width: 500){
-  .image-container1{
-      flex-direction: column;
-      height: 700px;
-      padding-bottom: 200px;
-      
-  }
-} */
-
-
-
