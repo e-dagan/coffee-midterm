@@ -23,6 +23,7 @@
 
 .topnav a:hover {
   text-decoration: underline;
+  
 }
 
 a:link {
@@ -33,6 +34,8 @@ a:link {
 a:visited {
   text-decoration: none;
 }
+
+
 
 
 /* Title */
@@ -219,28 +222,26 @@ h1 {
       }
   
       .image-item {
-        width: 150px;
-        height: 150px;
+        width: 100%;
+        height: 100%;
       }
 
 
   /* Mobile IphoneXR */
 @media screen and (max-width: 414px) {
- 
+
   .image-container1 {
-    display: inline ;
-    width: 20%;
-    
+    width: 50%%;
     height: auto;
-    
+    display: flex;
+        flex-flow: row wrap;
 
   }
 
   .image-item {
     margin-left: 50px;
     padding: 10px;
-    width: 200px;
-    height: 200px;
+  
   }
 
   .caption-text {
